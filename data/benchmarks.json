@@ -1,0 +1,314 @@
+{
+    "india_2024_2025": {
+        "name": "India",
+        "extractable_gw_bcm": 407.76,
+        "extraction_total_bcm": 247.22,
+        "rainfall_mm": 1055.21,
+        "recharge_bcm": 448.51,
+        "stress_index": 60.6,
+        "sustainability_ratio": 1.8,
+        "recharge_efficiency": 425.0,
+        "agri_dependency": 87.0,
+        "stage_of_extraction": 60.6,
+        "agri_extraction_pct": 87.0,
+        "domestic_extraction_pct": 11.8,
+        "industrial_extraction_pct": 1.2
+    },
+    "maharashtra_2024_2025": {
+        "name": "Maharashtra",
+        "extractable_gw_ham": 3199413.91,
+        "extraction_total_ham": 1657040.9,
+        "rainfall_mm": 1039.98,
+        "recharge_ham": 3388867.94,
+        "stress_index": 51.8,
+        "sustainability_ratio": 2.0,
+        "recharge_efficiency": 32.6,
+        "agri_dependency": 91.3,
+        "stage_of_extraction": 51.8,
+        "agri_extraction_pct": 91.3,
+        "domestic_extraction_pct": 7.9,
+        "industrial_extraction_pct": 0.8
+    },
+    "districts": {
+        "AHMEDNAGAR": {
+            "name": "Ahmednagar",
+            "stress_index": 76.9,
+            "sustainability_ratio": 1.5,
+            "recharge_efficiency": 18.2,
+            "agri_dependency": 91.1,
+            "stage": 76.9
+        },
+        "AKOLA": {
+            "name": "Akola",
+            "stress_index": 63.3,
+            "sustainability_ratio": 1.6,
+            "recharge_efficiency": 7.6,
+            "agri_dependency": 87.1,
+            "stage": 63.3
+        },
+        "AMRAVATI": {
+            "name": "Amravati",
+            "stress_index": 75.8,
+            "sustainability_ratio": 1.4,
+            "recharge_efficiency": 8.9,
+            "agri_dependency": 91.7,
+            "stage": 75.8
+        },
+        "AURANGABAD": {
+            "name": "Aurangabad",
+            "stress_index": 64.1,
+            "sustainability_ratio": 1.7,
+            "recharge_efficiency": 11.5,
+            "agri_dependency": 92.4,
+            "stage": 64.1
+        },
+        "BEED": {
+            "name": "Beed",
+            "stress_index": 58.1,
+            "sustainability_ratio": 1.8,
+            "recharge_efficiency": 14.9,
+            "agri_dependency": 93.3,
+            "stage": 58.1
+        },
+        "BHANDARA": {
+            "name": "Bhandara",
+            "stress_index": 41.5,
+            "sustainability_ratio": 2.4,
+            "recharge_efficiency": 12.0,
+            "agri_dependency": 84.5,
+            "stage": 41.5
+        },
+        "BULDHANA": {
+            "name": "Buldhana",
+            "stress_index": 82.3,
+            "sustainability_ratio": 1.2,
+            "recharge_efficiency": 10.3,
+            "agri_dependency": 95.3,
+            "stage": 82.3
+        },
+        "CHANDRAPUR": {
+            "name": "Chandrapur",
+            "stress_index": 31.1,
+            "sustainability_ratio": 3.2,
+            "recharge_efficiency": 15.5,
+            "agri_dependency": 73.1,
+            "stage": 31.1
+        },
+        "DHULE": {
+            "name": "Dhule",
+            "stress_index": 56.7,
+            "sustainability_ratio": 1.8,
+            "recharge_efficiency": 22.5,
+            "agri_dependency": 96.1,
+            "stage": 56.7
+        },
+        "GADCHIROLI": {
+            "name": "Gadchiroli",
+            "stress_index": 15.2,
+            "sustainability_ratio": 6.6,
+            "recharge_efficiency": 17.2,
+            "agri_dependency": 72.8,
+            "stage": 15.2
+        },
+        "GONDIA": {
+            "name": "Gondia",
+            "stress_index": 29.6,
+            "sustainability_ratio": 3.4,
+            "recharge_efficiency": 5.1,
+            "agri_dependency": 65.5,
+            "stage": 29.6
+        },
+        "HINGOLI": {
+            "name": "Hingoli",
+            "stress_index": 33.1,
+            "sustainability_ratio": 3.0,
+            "recharge_efficiency": 16.1,
+            "agri_dependency": 90.6,
+            "stage": 33.1
+        },
+        "JALGAON": {
+            "name": "Jalgaon",
+            "stress_index": 70.5,
+            "sustainability_ratio": 1.4,
+            "recharge_efficiency": 12.3,
+            "agri_dependency": 93.3,
+            "stage": 70.5
+        },
+        "JALNA": {
+            "name": "Jalna",
+            "stress_index": 54.4,
+            "sustainability_ratio": 1.8,
+            "recharge_efficiency": 13.9,
+            "agri_dependency": 96.1,
+            "stage": 54.4
+        },
+        "KOLHAPUR": {
+            "name": "Kolhapur",
+            "stress_index": 45.4,
+            "sustainability_ratio": 2.2,
+            "recharge_efficiency": 5.4,
+            "agri_dependency": 93.0,
+            "stage": 45.4
+        },
+        "LATUR": {
+            "name": "Latur",
+            "stress_index": 52.7,
+            "sustainability_ratio": 1.9,
+            "recharge_efficiency": 8.4,
+            "agri_dependency": 89.2,
+            "stage": 52.7
+        },
+        "MUMBAI": {
+            "name": "Mumbai",
+            "stress_index": 46.0,
+            "sustainability_ratio": 2.2,
+            "recharge_efficiency": 0.0,
+            "agri_dependency": 0.0,
+            "stage": 46.0
+        },
+        "MUMBAI SUBURBAN": {
+            "name": "Mumbai Suburban",
+            "stress_index": 19.2,
+            "sustainability_ratio": 3.4,
+            "recharge_efficiency": 0.0,
+            "agri_dependency": 0.0,
+            "stage": 19.2
+        },
+        "NAGPUR": {
+            "name": "Nagpur",
+            "stress_index": 56.0,
+            "sustainability_ratio": 1.8,
+            "recharge_efficiency": 15.0,
+            "agri_dependency": 85.0,
+            "stage": 56.0
+        },
+        "NANDED": {
+            "name": "Nanded",
+            "stress_index": 38.5,
+            "sustainability_ratio": 2.6,
+            "recharge_efficiency": 11.4,
+            "agri_dependency": 90.8,
+            "stage": 38.5
+        },
+        "NANDURBAR": {
+            "name": "Nandurbar",
+            "stress_index": 53.0,
+            "sustainability_ratio": 1.9,
+            "recharge_efficiency": 29.6,
+            "agri_dependency": 92.9,
+            "stage": 53.0
+        },
+        "NASHIK": {
+            "name": "Nashik",
+            "stress_index": 81.0,
+            "sustainability_ratio": 1.2,
+            "recharge_efficiency": 12.0,
+            "agri_dependency": 93.9,
+            "stage": 81.0
+        },
+        "OSMANABAD": {
+            "name": "Osmanabad",
+            "stress_index": 63.4,
+            "sustainability_ratio": 1.6,
+            "recharge_efficiency": 13.9,
+            "agri_dependency": 94.6,
+            "stage": 63.4
+        },
+        "PALGHAR": {
+            "name": "Palghar",
+            "stress_index": 30.9,
+            "sustainability_ratio": 3.2,
+            "recharge_efficiency": 1.5,
+            "agri_dependency": 85.3,
+            "stage": 30.9
+        },
+        "PUNE": {
+            "name": "Pune",
+            "stress_index": 82.9,
+            "sustainability_ratio": 1.2,
+            "recharge_efficiency": 14.9,
+            "agri_dependency": 94.9,
+            "stage": 82.9
+        },
+        "RAIGAD": {
+            "name": "Raigad",
+            "stress_index": 45.3,
+            "sustainability_ratio": 2.2,
+            "recharge_efficiency": 1.2,
+            "agri_dependency": 80.5,
+            "stage": 45.3
+        },
+        "RATNAGIRI": {
+            "name": "Ratnagiri",
+            "stress_index": 12.3,
+            "sustainability_ratio": 8.1,
+            "recharge_efficiency": 1.5,
+            "agri_dependency": 74.3,
+            "stage": 12.3
+        },
+        "SANGLI": {
+            "name": "Sangli",
+            "stress_index": 59.3,
+            "sustainability_ratio": 1.7,
+            "recharge_efficiency": 18.0,
+            "agri_dependency": 96.6,
+            "stage": 59.3
+        },
+        "SATARA": {
+            "name": "Satara",
+            "stress_index": 76.1,
+            "sustainability_ratio": 1.3,
+            "recharge_efficiency": 9.8,
+            "agri_dependency": 93.9,
+            "stage": 76.1
+        },
+        "SINDHUDURG": {
+            "name": "Sindhudurg",
+            "stress_index": 39.9,
+            "sustainability_ratio": 2.5,
+            "recharge_efficiency": 1.1,
+            "agri_dependency": 66.8,
+            "stage": 39.9
+        },
+        "SOLAPUR": {
+            "name": "Solapur",
+            "stress_index": 73.3,
+            "sustainability_ratio": 1.4,
+            "recharge_efficiency": 16.9,
+            "agri_dependency": 95.8,
+            "stage": 73.3
+        },
+        "THANE": {
+            "name": "Thane",
+            "stress_index": 40.7,
+            "sustainability_ratio": 2.5,
+            "recharge_efficiency": 1.8,
+            "agri_dependency": 83.1,
+            "stage": 40.7
+        },
+        "WARDHA": {
+            "name": "Wardha",
+            "stress_index": 52.4,
+            "sustainability_ratio": 1.9,
+            "recharge_efficiency": 9.9,
+            "agri_dependency": 90.0,
+            "stage": 52.4
+        },
+        "WASHIM": {
+            "name": "Washim",
+            "stress_index": 65.9,
+            "sustainability_ratio": 1.5,
+            "recharge_efficiency": 9.1,
+            "agri_dependency": 91.9,
+            "stage": 65.9
+        },
+        "YAVATMAL": {
+            "name": "Yavatmal",
+            "stress_index": 37.5,
+            "sustainability_ratio": 2.7,
+            "recharge_efficiency": 7.4,
+            "agri_dependency": 85.3,
+            "stage": 37.5
+        }
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groundwater AI | Maharashtra Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-water"></i>
+                <span>AquaIntel <b>MH</b></span>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-item active" onclick="switchView('chat-view', this)">
+                    <i class="fas fa-comment-dots"></i>
+                    AI Assistant
+                </button>
+                <button class="nav-item" onclick="switchView('dashboard-view', this)">
+                    <i class="fas fa-chart-line"></i>
+                    Analytics
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="ai-config-panel">
+                    <label>AI MODEL SOURCE</label>
+                    <div class="ai-selector">
+                        <button id="provider-groq" class="active" onclick="setProvider('groq')">
+                            <i class="fas fa-cloud"></i> Groq
+                        </button>
+                        <button id="provider-ollama" onclick="setProvider('ollama')">
+                            <i class="fas fa-server"></i> Ollama
+                        </button>
+                    </div>
+                    <small id="provider-status">Using high-speed cloud</small>
+                </div>
+                <div class="footer-info">
+                    <p>Data Source: INGRES Platform</p>
+                    <span class="status-indicator">System Live</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Chat View -->
+            <section id="chat-view" class="view active">
+                <header class="view-header">
+                    <h1>Groundwater AI Assistant</h1>
+                    <p>Ask anything about rainfall, recharge, or extraction across Maharashtra.</p>
+                </header>
+                <div class="chat-layout">
+                    <div class="chat-main">
+                        <div id="chat-messages" class="chat-messages">
+                            <div class="message assistant">
+                                <div class="bubble">
+                                    Hello! I am your Maharashtra Groundwater Intelligence Assistant. How can I help you
+                                    today?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-input-container">
+                            <div class="quick-actions">
+                                <button onclick="sendQuickQuery('Show me Pune district summary')">Pune Summary</button>
+                                <button onclick="sendQuickQuery('List safe talukas in Nashik')">Safe Nashik</button>
+                                <button
+                                    onclick="sendQuickQuery('Which taluka has highest groundwater extraction?')">Highest
+                                    Extraction</button>
+                                <button
+                                    onclick="sendQuickQuery('Show all critical and over-exploited talukas')">Critical
+                                    Zones</button>
+                                <button onclick="sendQuickQuery('Rank all districts by average rainfall')">Rainfall
+                                    Rankings</button>
+                                <button
+                                    onclick="sendQuickQuery('Which districts have the lowest future groundwater availability?')">Scarcity
+                                    Risks</button>
+                                <button
+                                    onclick="sendQuickQuery('Show me the recharge sources for Nagpur district')">Nagpur
+                                    Recharge</button>
+                            </div>
+                            <form id="chat-form" class="input-wrapper">
+                                <input type="text" id="user-input"
+                                    placeholder="Type your question here (e.g. What is the rainfall in Haveli?)..."
+                                    autocomplete="off">
+                                <button type="submit" id="send-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <aside id="visuals-explorer" class="visuals-explorer">
+                        <div class="explorer-header">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Visuals Explorer</span>
+                        </div>
+                        <div id="visuals-content" class="visuals-content">
+                            <div class="empty-visuals">
+                                <i class="fas fa-project-diagram"></i>
+                                <p>Charts and tables from the AI will appear here.</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- Dashboard View (Placeholder for later enhancement) -->
+            <section id="dashboard-view" class="view">
+                <header class="view-header">
+                    <h1>Data Analytics Overview</h1>
+                    <p>Visualizing groundwater metrics across districts.</p>
+                </header>
+                <div class="dashboard-grid">
+                    <div class="card district-selector">
+                        <h3>Select District</h3>
+                        <select id="district-dropdown">
+                            <option value="">Loading districts...</option>
+                        </select>
+                    </div>
+                    <div class="card stat-card" id="summary-card">
+                        <h3>District Summary</h3>
+                        <div id="summary-data" class="loading-text">Select a district to see analytics</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
